@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
-@import "bootstrap";
+// @import "bootstrap";
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
 
@@ -28,28 +28,37 @@
   height: 70px;
 }
 
-body,
-#wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background-color: #F5F5F5;
-}
-
 header{
-  position: fixed;
   width: 100%;
-  z-index: 99;
-  background-color: #fff;
-}
-.header-title{
-  font-family: 'Dancing Script', cursive;
-  font-weight: bold;
-  font-size: 25px;
-  color: black;
-  margin-left: 30px;
+  height: 70px;
+  background-color: #EC715F;
 }
 
-main{
-  padding-top: 80px;
+.header-group {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav-list {
+  width: 120px;
+  line-height: 70px;
+  color: #FAFAFA;
+  padding: 0 30px;
+  list-style: none;
+  font-size: 16px;
+}
+
+.nav-list a {
+  color: #FAFAFA;
+  text-decoration: none;
 }
