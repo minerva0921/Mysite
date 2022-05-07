@@ -9,16 +9,16 @@
     <nav>
       <ul class="nav">
         <li class="nav-list">
-          <%= link_to "Portfolio", portfolio_path%>
+          <%= link_to "portfolio", {anchor: "portfolio"}, class: "portfolio" %>
         </li>
         <li class="nav-list">
-          <%= link_to "Feature", feature_path%>
+          <%= link_to "feature", {anchor: "feature"}, class: "feature" %>
         </li>
         <li class="nav-list">
-          <%= link_to "Profile", profile_path%>
+          <%= link_to "profile", {anchor: "profile"}, class: "profile" %>
         </li>
         <li class="nav-list">
-          <%= link_to "Contact", contact_path%>
+          <%= link_to "contact", {anchor: "contact"}, class: "contact" %>
         </li>
       </ul>
     </nav>
